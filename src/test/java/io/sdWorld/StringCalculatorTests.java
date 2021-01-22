@@ -28,7 +28,7 @@ public class StringCalculatorTests {
 
     @Test
     public void testAddWithTwoNumber(){
-        assertEquals(1, stringCalculator.add("1,2"));
+        assertEquals(3, stringCalculator.add("1,2"));
     }
 
 }
