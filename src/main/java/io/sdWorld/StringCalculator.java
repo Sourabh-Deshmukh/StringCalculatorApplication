@@ -31,6 +31,9 @@ public class StringCalculator {
     }
 
     private String[] filterNumbers(String numbers) {
+        if(numbers.contains("\n") ){
+            numbers = numbers.replace("\n", ",");
+        }
         return numbers.split(",");
     }
 
