@@ -6,7 +6,15 @@ public class StringCalculator {
         if(numbers.isEmpty()){
             return 0;
         }
-        return 123;
+        return sumNumbers(numbers);
+    }
+
+    private int sumNumbers(String numbers) {
+        return convertToInt(numbers);
+    }
+
+    private int convertToInt(String numbers) {
+        return Integer.parseInt(numbers);
     }
 
 }
