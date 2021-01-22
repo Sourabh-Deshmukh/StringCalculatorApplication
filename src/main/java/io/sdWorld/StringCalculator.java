@@ -22,10 +22,10 @@ public class StringCalculator {
     }
 
     private List<Integer> convertToInt(String numbers) {
-        List<Integer> numberList = new ArrayList<Integer>();
+        ArrayList<Integer> numberList = new ArrayList<>();
         String[] stringNumbers = filterNumbers(numbers);
-        for(int iterator = 0 ; iterator < stringNumbers.length; iterator++){
-            numberList.add(Integer.parseInt(stringNumbers[iterator]));
+        for(String number : stringNumbers){
+            numberList.add(Integer.parseInt(number));
         }
         return numberList;
     }

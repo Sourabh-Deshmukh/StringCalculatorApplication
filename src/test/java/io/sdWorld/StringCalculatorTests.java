@@ -31,4 +31,9 @@ public class StringCalculatorTests {
         assertEquals(3, stringCalculator.add("1,2"));
     }
 
+    @Test
+    public void testAddWithUnknownAmountOfNumber(){
+        assertEquals(10, stringCalculator.add("1,2,3,4"));
+    }
+
 }
